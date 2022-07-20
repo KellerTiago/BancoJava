@@ -1,13 +1,31 @@
 package br.com.fiap.banco;
 
-public class Conta {
+import java.io.Serializable;
+
+public class Conta implements Serializable  {
 	
-	int agencia ;
-	int numero ;
-	double saldo ;
+	private int agencia ;
+	private int numero ;
+	private double saldo ;
 	
 	public Conta () {
 		
+	}
+
+	public int getAgencia() {
+		return agencia;
+	}
+
+	public void setAgencia(int agencia) {
+		this.agencia = agencia;
+	}
+
+	public int getNumero() {
+		return numero;
+	}
+
+	public void setNumero(int numero) {
+		this.numero = numero;
 	}
 
 	public Conta(int agencia, int numero, double saldo) {
@@ -29,7 +47,7 @@ public class Conta {
 		
 	}
 	
-	public double verificarSaldo () {
+	public double getSaldo () {
 		
 		return this.saldo;
 		
