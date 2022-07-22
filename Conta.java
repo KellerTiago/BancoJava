@@ -50,8 +50,7 @@ public class Conta implements Serializable  {
 	public double getSaldo () {
 		
 		return this.saldo;
-		
-		
+			
 	}
 
 }
